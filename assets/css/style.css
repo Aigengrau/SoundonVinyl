@@ -153,17 +153,80 @@ body {
 .logo a:hover {
     text-decoration:none;
 }
-.logo .logo-img {
+.logo .logo-text {
     top:20px;
     position:relative;
-    width:350px;
-    left:22px;
+    display:inline-block;
+    text-align:center;
+    font-size:0;
 }
-.logo .logo-animation {
+.logo .logo-title {
+    font-size:36px;
+    font-weight:900;
+    color:#000;
+    line-height:1;
+    letter-spacing:1px;
+    white-space:nowrap;
+}
+.logo .logo-divider {
+    display:block;
+    height:3px;
+    margin:6px 0 4px;
+    background:linear-gradient(to right, #000 0%, #000 50%, #c9a763 50%, #c9a763 100%);
+}
+.logo .logo-subtitle {
+    font-size:18px;
+    font-weight:400;
+    color:#000;
+    line-height:1.2;
+    font-family:Georgia, serif;
+    margin-bottom:4px;
+}
+.logo .logo-vinyls {
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:4px;
+}
+.logo .vinyl {
+    width:36px;
+    height:36px;
+    border-radius:50%;
     position:relative;
-    width:44px;
-    left:-299px;
-    top:3px;
+    display:inline-block;
+    background:
+        radial-gradient(circle,
+            #c9a763 0%,
+            #c9a763 28%,
+            #1a1a1a 29%,
+            #0a0a0a 100%);
+    animation:vinyl-spin 1.8s linear infinite;
+}
+.logo .vinyl::before {
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:3px;
+    height:3px;
+    background:#000;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+}
+.logo .vinyl::after {
+    content:'';
+    position:absolute;
+    top:30%;
+    left:58%;
+    width:1.5px;
+    height:5px;
+    background:rgba(0,0,0,0.4);
+    border-radius:1px;
+}
+@keyframes vinyl-spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
 }
 .logo .slogan {
     position:absolute;
@@ -1333,18 +1396,28 @@ body {
         z-index:990;
         width:100%;
     }
-    .logo .logo-img {
-        position:absolute;
-        z-index:991;
-        width:90%;
-        left:5%;
-        top:11%;
+    .logo .logo-text {
+        position:relative;
+        top:10px;
+        width:100%;
+        padding:0 5%;
+        box-sizing:border-box;
     }
-    .logo .logo-animation {
-        position:absolute;
-        width:12%;
-        left:12.3%;
-        top:12%;
+    .logo .logo-title {
+        font-size:26px;
+    }
+    .logo .logo-subtitle {
+        font-size:14px;
+    }
+    .logo .logo-vinyls {
+        gap:6px;
+    }
+    .logo .vinyl {
+        width:26px;
+        height:26px;
+    }
+    .logo .vinyl::after {
+        height:4px;
     }
     .logo .slogan {
         top:	auto;
