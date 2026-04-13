@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Информация о проекте — ЗВУК НА ВИНИЛЕ с Павлом Катковым</title>
+    <meta name="keywords" content="звук на виниле, о проекте, павел катков, винил, рок">
+    <meta name="description" content="Информация о проекте ЗВУК НА ВИНИЛЕ с Павлом Катковым.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/jquery.color.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/detect.min.js"></script>
+    <script src="assets/js/jquery.actual.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <style>
+    .menu a.about {
+        color:#e3b864;
+    }
+    </style>
+    <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+</head>
+<body>
+<div class="loader" style="display: none;"></div>
+<div class="load" style="visibility: visible !important">
+
+<div class="border-left" style="width: 173px; visibility: visible;"></div>
+<div class="border-right" style="width: 173px; visibility: visible;"></div>
+<div class="head"></div>
+<div class="logo">
+    <a href="index.html">
+        <img class="logo-img" src="assets/img/logo2.png" alt="">
+        <img class="logo-animation" src="assets/img/animation.gif" alt="">
+        <br>
+        <div class="slogan">
+            ЗВУК НА ВИНИЛЕ.<br>
+            <span class="frame1">Живая<span style="opacity: 0;">Живая</span></span> <span class="color">история</span> <span class="frame2">звука.<span style="opacity: 1;">звука.</span></span>
+        </div>
+    </a>
+</div>
+
+<!-- menu -->
+<div class="menu-desktop menu" style="top: 190px; position: absolute;">
+<ul>
+    <li><a href="index.html" class="home">ГЛАВНАЯ</a></li>
+    <li><a href="about.html" class="about">О ПРОЕКТЕ</a></li>
+    <li><a href="autor.html" class="autor">ОБ АВТОРЕ</a></li>
+    <li><a href="newsproject.html" class="newsproject">НАШИ НОВОСТИ</a></li>
+    <li><a href="rockandvinyl.html" class="rockandvinyl">РОК &amp; ВИНИЛ</a></li>
+    <li><a href="blog.html" class="blog">БЛОГ</a></li>
+    <li><a href="contacts.html" class="contacts">КОНТАКТЫ</a></li>
+    <li><a class="search" data-show="false"><i class="fa fa-search"></i></a></li>
+</ul>
+<div>
+    <div class="menu-search">
+        <form enctype="multipart/form-data" method="get" action="#" id="form-search">
+            <input type="search" name="s" value="" placeholder="Поиск" class="req"><i class="fa fa-search" onclick="$('#form-search').submit();"></i>
+        </form>
+    </div>
+</div>
+<script>
+$('#form-search').submit(tryFormSubmit);
+$('.menu-desktop .search').click(function(){
+    var s = $(this).attr('data-show');
+    if (s=='false') {
+        $('.menu-search').removeClass('slideOutUp');
+        $('.menu-search').addClass('slideInDown');
+        $('.menu-search').addClass('s');
+        $('.menu-desktop .search').attr('data-show', 'true');
+        $('.menu-search input').focus();
+    } else {
+        $('.menu-search').removeClass('slideInDown');
+        $('.menu-search').addClass('slideOutUp');
+        $('.menu-desktop .search').attr('data-show', 'false');
+    }
+});
+</script>
+</div>
+<div class="menu-mobile menu" style="top: 190px; position: absolute;">
+<i class="fa fa-bars"></i>
+<ul>
+    <li><a href="index.html" class="home">ГЛАВНАЯ</a></li>
+    <li><a href="about.html" class="about">О ПРОЕКТЕ</a></li>
+    <li><a href="autor.html" class="autor">ОБ АВТОРЕ</a></li>
+    <li><a href="newsproject.html" class="newsproject">НАШИ НОВОСТИ</a></li>
+    <li><a href="rockandvinyl.html" class="rockandvinyl">РОК &amp; ВИНИЛ</a></li>
+    <li><a href="blog.html" class="blog">БЛОГ</a></li>
+    <li><a href="contacts.html" class="contacts">КОНТАКТЫ</a></li>
+    <li class="search">
+        <form enctype="multipart/form-data" method="get" action="#" id="form-search-mobile">
+            <input type="search" name="s" value="" placeholder="Поиск" class="req"><span class="fa fa-search" onclick="$('#form-search-mobile').submit();"></span>
+        </form>
+    </li>
+    <script>
+    $('#form-search-mobile').submit(tryFormSubmit);
+    </script>
+</ul>
+</div>
+<script>
+$(window).scroll(function() {
+    if (typeof block4 !=='undefined') {
+        if (detect.parse(navigator.userAgent).browser.family == 'Firefox' || $(window).width() <= 971 || logodirect == 'showlogo') {
+            menu();
+        }
+    } else {
+        menu();
+    }
+});
+</script>
+<!-- end menu -->
+
+<div class="top-container">
+<div class="top-center">
+<div class="top-content">
+<div id="scroll-top"></div>
+
+<div class="com-page component">
+
+<div class="component-head-vr"></div>
+<div class="component-head-block">
+<h1>Информация о проекте</h1>
+</div>
+
+<div class="component-content" style="margin-top:30px; line-height:30px;">
+
+<p><strong>«ЗВУК НА ВИНИЛЕ» с Павлом Катковым</strong> — уникальное музыкальное виниловое шоу о рок-музыке на виниловых пластинках.</p>
+
+<p>Ведущий программы «ЗВУК НА ВИНИЛЕ» Павел Катков рассказывает о создании великих рок-альбомов, раскрывает интересные факты из биографии музыкантов, демонстрирует оригинальные пластинки тех лет, редкие виниловые релизы прошлого и новинки современного винилового мира.</p>
+
+<p>Репертуар программы составляют пластинки <strong>The Beatles, The Rolling Stones, The Who, The Doors, Deep Purple, Led Zeppelin, Black Sabbath, Uriah Heep, Genesis, Yes, King Crimson, Jethro Tull, David Bowie, Camel, Barclay James Harvest, Chicago, Van Halen, AC/DC, Aerosmith</strong> и других групп и исполнителей, внёсших вклад в формирование и развитие рок-сцены великой виниловой эпохи.</p>
+
+<p>Отдельные выпуски программы посвящены трансформациям рока в 80-90-х годах (<strong>Motorhead, Iron Maiden, Guns'n'Roses, Slayer, Soundgarden, Rage Against The Machine</strong> и др.) прошлого столетия и исполнителям наших дней.</p>
+
+<p>В программе демонстрируются известные виниловые альбомы, а также редкости, «бутлеги», синглы, коллекционные работы, лимитированные издания.</p>
+
+<p>Проект «ЗВУК НА ВИНИЛЕ» успешно гастролирует по всей стране, шоу проходят в Москве, в Горки-город и Роза Хутор на Красной Поляне в Сочи, на ВДНХ в Доме винтажной музыки, в Калуге на фестивале Insomnia, в Лужниках на фестивале еды Taste of Moscow, в элитном сигарном клубе Hi-Fi Винтаж и на других площадках.</p>
+
+<p>В сентябре 2017 «ЗВУК НА ВИНИЛЕ» с Павлом Катковым был представлен на <strong>NAMM Musikmesse</strong> — крупнейшей международной музыкальной выставке в мире. Другим знаковым мероприятием выставки стал мастер-класс Томми Олдриджа — легендарного барабанщика, участника проектов <strong>Whitesnake, Motorhead, Ozzy Osbourne, Gary Moore, Thin Lizzy</strong> и других рок-команд и исполнителей.</p>
+
+<p>В феврале 2018 «ЗВУК НА ВИНИЛЕ» с Павлом Катковым прозвучал в Клубе Алексея Козлова — одном из лучших клубов Москвы, на сцене которого стоял сам <strong>Scott Henderson</strong> — блистательный гитарист, яркая звезда джаз-рока, он выступал с <strong>Chick Corea, Jean-Luc Ponty, Jeff Berlin</strong> и <strong>Joe Zawinul</strong>.</p>
+
+<p>В июне 2018 года «ЗВУК НА ВИНИЛЕ» с Павлом Катковым представил шоу на площадке BACKSTAGE концертного зала «Роза Холл» — современной концертной площадки вместимостью до 5000 мест и общей площадью более 10 000 кв.метров, удобство которой уже оценили звезды российской и зарубежной сцены: БИ-2, Григорий Лепс, Машина Времени, Лариса Долина, THERR MAITZ и многие другие.</p>
+
+<p>«ЗВУК НА ВИНИЛЕ» с Павлом Катковым — яркое современное шоу, которое хранит славные традиции винилового звучания и доносит их до своих слушателей. ЗВУК НА ВИНИЛЕ: живая история звука.</p>
+
+<p><a href="contacts.html">Получить приглашение на программу «ЗВУК НА ВИНИЛЕ».</a></p>
+
+<p><a href="contacts.html">Пригласить «ЗВУК НА ВИНИЛЕ» провести программу, лекцию или виниловую вечеринку в Вашем баре, пабе, ресторане, виниловом магазине, культурном центре.</a></p>
+
+</div>
+
+</div>
+
+<!-- banners -->
+<div class="banners component">
+    <div class="banners-hr"></div>
+    <div class="component-head-vr"></div>
+    <div class="component-head-block">
+        <div>Друзья и партнёры</div>
+    </div>
+    <div class="banners-images">
+        <a href="http://jazzesse.ru/" target="_blank"><img src="banners/vinylvintage.jpg" alt=""></a>
+        <a href="http://inrock.ru/" target="_blank"><img src="banners/inrock.png" alt=""></a>
+        <a href="http://colisium.org/" target="_blank"><img src="banners/logo_colisium.png" alt=""></a>
+        <a href="http://katkovpartners.ru/" target="_blank"><img src="banners/katkov.png" alt=""></a>
+        <a href="http://insomniafest.ru/" target="_blank"><img src="banners/insomnia.jpg" alt=""></a>
+        <a href="http://arutunov.ru/" target="_blank"><img src="banners/arutunov.jpg" alt=""></a>
+        <a href="http://intermedia.ru/" target="_blank"><img src="banners/InterMedia.png" alt=""></a>
+        <a href="http://vinyl-time.com/" target="_blank"><img src="banners/vinyl_time.png" alt=""></a>
+        <a href="http://nota.ru/" target="_blank"><img src="banners/notalogo.jpg" alt=""></a>
+        <a href="https://www.hotdraftproductions.com/" target="_blank"><img src="banners/british.jpg" alt=""></a>
+        <a href="https://www.newartvinyl.ru/" target="_blank"><img src="banners/NEWARTVINYL1.jpg" alt=""></a>
+        <a href="https://www.stereomanclub.ru/" target="_blank"><img src="banners/STEREOMANCLUB1.jpg" alt=""></a>
+        <a href="http://www.eridanaudio.ru/" target="_blank"><img src="banners/eridan.png" alt=""></a>
+        <a href="https://kozlovclub.ru/" target="_blank"><img src="banners/kozlov.jpg" alt=""></a>
+    </div>
+</div>
+<!-- end banners -->
+
+</div>
+</div>
+</div>
+
+<div class="bottom-container" id="footer">
+<div class="bottom-bg"></div>
+<div class="bottom-footer row">
+    <div class="bottom-footer-center col-md-4 col-md-push-4">
+        <div class="bottom-subscribe">
+<div class="subscribe-head">Подписаться на рассылку</div>
+<form id="subscribe-form">
+<input id="subscribe-email" name="subscribe_email" onfocus="if(this.value=='Введите email') this.value='';" onblur="if(!this.value) this.value='Введите email';" type="email" value="Введите email" autocomplete="off">
+<div id="subscribe-submit"><button type="submit">Подписаться</button><div id="subscribe-spinner"></div></div>
+<div class="politika"><input type="checkbox" required=""> <span>Даю согласие на обработку моих персональных данных, с условиями Политики ознакомлен</span></div>
+</form>
+        </div>
+    </div>
+    <div class="bottom-footer-left col-md-4 col-md-pull-4">
+        <div class="bottom-social">
+            <a target="_blank" href="https://vk.com/rockonvinyl"><i class="fa fa-vk"></i></a>
+            <a target="_blank" href="https://www.facebook.com/rockonvinyl"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/ROCKONVINYL"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/rockonvinyl"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="bottom-footer-right col-md-4">
+        <div class="bottom-copyright">
+            <p>Copyright &copy; 2017-2020 rockonvinyl.ru</p>
+            <p>ЗВУК НА ВИНИЛЕ с Павлом Катковым</p>
+            <p>+7 985 765 34 22</p>
+            <p>katkov@rockonvinyl.ru</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- modal subscribe-->
+<div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="ModalSubscribeLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body" style="overflow:hidden; padding:30px 10px 30px 10px;">
+                <div style="float:left;" class="msg"></div> <div style="float:right;"><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('#subscribe-form').submit(function(e){
+    e.preventDefault();
+    $('#ModalSubscribe').modal();
+    $('#ModalSubscribe .modal-body .msg').html('Спасибо за подписку!');
+    $('#subscribe-email').val('Введите email');
+});
+</script>
+<!-- end modal subscribe-->
+
+<a class="go-top">
+    <div class="triangle-up"></div>
+    <div class="rectangle"><span class="fa fa-angle-up"></span></div>
+</a>
+
+</div>
+<script>
+setTimeout(function(){
+    $('.loader').hide();
+    $('.load').attr('style', 'visibility: visible !important');
+}, 700);
+</script>
+
+</body>
+</html>
