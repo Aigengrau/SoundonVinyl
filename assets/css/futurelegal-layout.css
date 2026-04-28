@@ -1,0 +1,582 @@
+/* ============================================================
+   Futurelegal-style horizontal layout for ЗВУК НА ВИНИЛЕ
+   Loaded AFTER style.css to override the original sidebar layout
+   ============================================================ */
+
+html, body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* Hide original side-border decorations and absolute logo/menu */
+.border-left,
+.border-right,
+.head {
+    display: none !important;
+}
+.logo:not(.site-logo),
+.menu-desktop:not(.fl-nav),
+.menu-mobile:not(.fl-nav-mobile) {
+    display: none !important;
+}
+
+/* ----- Top horizontal header (split nav around centered logo) ----- */
+.site-header {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #111 0%, #1c1c1c 100%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    z-index: 1000;
+}
+.site-header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    gap: 24px;
+}
+.site-header .nav-left,
+.site-header .nav-right {
+    flex: 1 1 0;
+}
+.site-header .nav-left ul,
+.site-header .nav-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.site-header .nav-left ul {
+    justify-content: flex-end;
+}
+.site-header .nav-right ul {
+    justify-content: flex-start;
+}
+.site-header .nav-left li,
+.site-header .nav-right li {
+    margin: 0;
+    height: auto;
+}
+.site-header .nav-left a,
+.site-header .nav-right a {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+.site-header .nav-left a:hover,
+.site-header .nav-right a:hover,
+.site-header .nav-left a.active,
+.site-header .nav-right a.active {
+    color: #e3b864;
+    text-decoration: none;
+}
+
+/* Centered logo block inside header */
+.site-header .header-logo {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 0 18px;
+    border-left: 1px solid rgba(255,255,255,0.10);
+    border-right: 1px solid rgba(255,255,255,0.10);
+}
+.site-header .header-logo a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.site-header .header-logo .logo-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1;
+    white-space: nowrap;
+}
+.site-header .header-logo .logo-divider {
+    height: 2px;
+    margin: 5px 0 4px;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #c9a763 50%, #c9a763 100%);
+}
+.site-header .header-logo .logo-subtitle {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #c9a763;
+    letter-spacing: 0.05em;
+}
+.site-header .header-logo .logo-vinyls {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 6px;
+}
+.site-header .header-logo .vinyl {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    background: radial-gradient(circle, #c9a763 0%, #c9a763 28%, #1a1a1a 29%, #0a0a0a 100%);
+    animation: vinyl-spin 1.8s linear infinite;
+}
+
+/* Mobile menu toggle */
+.site-header .nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ----- Hero section (futurelegal-style banner) ----- */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.70) 100%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 980px;
+    padding: 80px 24px;
+    text-align: center;
+}
+.hero-content h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    margin: 0 0 20px;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.hero-content .hero-subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: #f4f4f4;
+    margin: 0 0 36px;
+    letter-spacing: 0.01em;
+}
+.hero-content .hero-subtitle .accent {
+    color: #e3b864;
+    font-weight: 600;
+}
+.hero-cta {
+    display: inline-block;
+    padding: 16px 52px;
+    background: #ffffff;
+    color: #1a1a1a !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 2px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.hero-cta:hover {
+    background: #c9a763;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Smaller page banner (non-index pages) */
+.page-banner {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    overflow: hidden;
+}
+.page-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.75) 100%);
+    z-index: 1;
+}
+.page-banner h1 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0;
+    text-align: center;
+    padding: 24px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ----- Main content wrapper (full width, max-width centered) ----- */
+.top-container {
+    position: relative;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: #ffffff;
+    border: none !important;
+    min-height: 0;
+    max-width: 100%;
+}
+.top-center {
+    position: relative;
+    padding-top: 0 !important;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.top-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px !important;
+    padding-top: 50px;
+    background: #ffffff;
+}
+
+/* Section headings get the futurelegal-style treatment */
+.component-head-block {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+.component-head-block > div,
+.component-head-block h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 14px;
+}
+.component-head-block > div::after,
+.component-head-block h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c9a763;
+    margin: 12px auto 0;
+}
+.component-head-block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Banner partners grid */
+.banners {
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+.banners-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+}
+.banners-images a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0.75;
+}
+.banners-images a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+.banners-images img {
+    max-height: 60px;
+    max-width: 180px;
+    width: auto;
+}
+
+/* ----- Footer ----- */
+.bottom-container {
+    position: relative;
+    margin-top: 0;
+    height: auto;
+    background: #111;
+    color: #cfcfcf;
+    padding: 50px 24px 30px;
+    z-index: 100;
+}
+.bottom-bg {
+    display: none;
+}
+.bottom-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.bottom-footer .bottom-footer-left,
+.bottom-footer .bottom-footer-center,
+.bottom-footer .bottom-footer-right {
+    flex: 1 1 280px;
+    width: auto !important;
+    padding: 0 !important;
+    left: auto !important;
+    right: auto !important;
+}
+.bottom-social {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bottom-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.bottom-social a:hover {
+    background: #c9a763;
+    color: #111 !important;
+}
+.subscribe-head {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#subscribe-email {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #ffffff;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+#subscribe-email::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+#subscribe-submit button {
+    background: #c9a763;
+    color: #1a1a1a;
+    font-weight: 700;
+    border: none;
+    padding: 11px 22px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 13px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+#subscribe-submit button:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+.politika {
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.4;
+}
+.politika input {
+    margin-right: 6px;
+}
+.bottom-copyright p {
+    margin: 4px 0;
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+}
+.bottom-copyright p:first-child {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+}
+
+/* ----- Page content typography (about / autor) ----- */
+.com-page,
+.com-text {
+    padding: 30px 0 60px;
+}
+.com-page p,
+.com-text p {
+    line-height: 30px;
+    color: #3e3e3e;
+    margin: 14px 0;
+    text-align: justify;
+}
+.com-page a,
+.com-text a {
+    color: #c9a763;
+}
+
+/* Contact page */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 0 60px;
+}
+.contact-info > div {
+    flex: 1 1 260px;
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+    .site-header-inner {
+        padding: 14px 20px;
+        gap: 14px;
+    }
+    .site-header .nav-left ul,
+    .site-header .nav-right ul {
+        gap: 14px;
+    }
+    .site-header .nav-left a,
+    .site-header .nav-right a {
+        font-size: 12px;
+        letter-spacing: 0.10em;
+    }
+    .hero-content h1 {
+        font-size: 48px;
+    }
+}
+@media (max-width: 768px) {
+    .site-header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 16px;
+    }
+    .site-header .nav-toggle {
+        display: inline-block;
+        order: 1;
+    }
+    .site-header .header-logo {
+        order: 2;
+        flex: 1 1 auto;
+        border: none;
+        padding: 0 8px;
+    }
+    .site-header .header-logo .logo-title {
+        font-size: 18px;
+    }
+    .site-header .header-logo .logo-vinyls {
+        display: none;
+    }
+    .site-header .nav-left,
+    .site-header .nav-right {
+        order: 4;
+        flex: 1 1 100%;
+        display: none;
+    }
+    .site-header.menu-open .nav-left,
+    .site-header.menu-open .nav-right {
+        display: block;
+    }
+    .site-header.menu-open .nav-left ul,
+    .site-header.menu-open .nav-right ul {
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+    }
+    .hero {
+        min-height: 360px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content .hero-subtitle {
+        font-size: 18px;
+    }
+    .hero-cta {
+        padding: 13px 36px;
+        font-size: 13px;
+    }
+    .top-center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .component-head-block > div,
+    .component-head-block h1 {
+        font-size: 22px;
+    }
+    .mod-news1 .article-images {
+        position: relative !important;
+        width: 100% !important;
+        height: 220px !important;
+    }
+    .mod-news1 .article-content {
+        padding-right: 0 !important;
+        min-height: 0 !important;
+        margin-top: 16px;
+    }
+    .mod-news2 .article-content {
+        padding-right: 0 !important;
+    }
+    .mod-news2 .article-img,
+    .mod-news2 .article-img-black {
+        position: relative !important;
+        width: 100% !important;
+        height: 200px !important;
+        margin-top: 12px;
+    }
+    .bottom-footer {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
