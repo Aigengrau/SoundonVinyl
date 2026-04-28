@@ -19,115 +19,66 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/futurelegal-layout.css">
     <script src="assets/js/detect.min.js"></script>
     <script src="assets/js/jquery.actual.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <style>
-    .menu a.rockandvinyl {
-        color:#e3b864;
-    }
-    </style>
     <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
 </head>
 <body>
 <div class="loader" style="display: none;"></div>
 <div class="load" style="visibility: visible !important">
 
-<div class="border-left" style="width: 173px; visibility: visible;"></div>
-<div class="border-right" style="width: 173px; visibility: visible;"></div>
-<div class="head"></div>
-<div class="logo">
-    <a href="index.html">
-        <div class="logo-text">
-            <div class="logo-title">ЗВУК НА ВИНИЛЕ</div>
-            <div class="logo-divider"></div>
-            <div class="logo-subtitle">с Павлом Катковым</div>
-            <div class="logo-vinyls">
-                <span class="vinyl"></span>
-                <span class="vinyl"></span>
-                <span class="vinyl"></span>
-                <span class="vinyl"></span>
-                <span class="vinyl"></span>
-                <span class="vinyl"></span>
-            </div>
+<!-- Top horizontal header -->
+<header class="site-header" id="siteHeader">
+    <div class="site-header-inner">
+        <button class="nav-toggle" type="button" aria-label="Меню"><i class="fa fa-bars"></i></button>
+        <nav class="nav-left">
+            <ul>
+                <li><a href="index.html" class="home">Главная</a></li>
+                <li><a href="about.html" class="about">О проекте</a></li>
+                <li><a href="autor.html" class="autor">Об авторе</a></li>
+                <li><a href="newsproject.html" class="newsproject">Новости</a></li>
+            </ul>
+        </nav>
+        <div class="header-logo">
+            <a href="index.html">
+                <div class="logo-title">ЗВУК НА ВИНИЛЕ</div>
+                <div class="logo-divider"></div>
+                <div class="logo-subtitle">с Павлом Катковым</div>
+                <div class="logo-vinyls">
+                    <span class="vinyl"></span>
+                    <span class="vinyl"></span>
+                    <span class="vinyl"></span>
+                    <span class="vinyl"></span>
+                </div>
+            </a>
         </div>
-        <br>
-        <div class="slogan">
-            ЗВУК НА ВИНИЛЕ.<br>
-            <span class="frame1">Живая<span style="opacity: 0;">Живая</span></span> <span class="color">история</span> <span class="frame2">звука.<span style="opacity: 1;">звука.</span></span>
-        </div>
-    </a>
-</div>
-
-<!-- menu -->
-<div class="menu-desktop menu" style="top: 190px; position: absolute;">
-<ul>
-    <li><a href="index.html" class="home">ГЛАВНАЯ</a></li>
-    <li><a href="about.html" class="about">О ПРОЕКТЕ</a></li>
-    <li><a href="autor.html" class="autor">ОБ АВТОРЕ</a></li>
-    <li><a href="newsproject.html" class="newsproject">НАШИ НОВОСТИ</a></li>
-    <li><a href="rockandvinyl.html" class="rockandvinyl">РОК &amp; ВИНИЛ</a></li>
-    <li><a href="blog.html" class="blog">БЛОГ</a></li>
-    <li><a href="contacts.html" class="contacts">КОНТАКТЫ</a></li>
-    <li><a class="search" data-show="false"><i class="fa fa-search"></i></a></li>
-</ul>
-<div>
-    <div class="menu-search">
-        <form enctype="multipart/form-data" method="get" action="#" id="form-search">
-            <input type="search" name="s" value="" placeholder="Поиск" class="req"><i class="fa fa-search" onclick="$('#form-search').submit();"></i>
-        </form>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="rockandvinyl.html" class="rockandvinyl active">Рок & Винил</a></li>
+                <li><a href="blog.html" class="blog">Блог</a></li>
+                <li><a href="contacts.html" class="contacts">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+</header>
 <script>
-$('#form-search').submit(tryFormSubmit);
-$('.menu-desktop .search').click(function(){
-    var s = $(this).attr('data-show');
-    if (s=='false') {
-        $('.menu-search').removeClass('slideOutUp');
-        $('.menu-search').addClass('slideInDown');
-        $('.menu-search').addClass('s');
-        $('.menu-desktop .search').attr('data-show', 'true');
-        $('.menu-search input').focus();
-    } else {
-        $('.menu-search').removeClass('slideInDown');
-        $('.menu-search').addClass('slideOutUp');
-        $('.menu-desktop .search').attr('data-show', 'false');
+(function(){
+    var header = document.getElementById('siteHeader');
+    var toggle = header && header.querySelector('.nav-toggle');
+    if (toggle) {
+        toggle.addEventListener('click', function(){
+            header.classList.toggle('menu-open');
+        });
     }
-});
+})();
 </script>
-</div>
-<div class="menu-mobile menu" style="top: 190px; position: absolute;">
-<i class="fa fa-bars"></i>
-<ul>
-    <li><a href="index.html" class="home">ГЛАВНАЯ</a></li>
-    <li><a href="about.html" class="about">О ПРОЕКТЕ</a></li>
-    <li><a href="autor.html" class="autor">ОБ АВТОРЕ</a></li>
-    <li><a href="newsproject.html" class="newsproject">НАШИ НОВОСТИ</a></li>
-    <li><a href="rockandvinyl.html" class="rockandvinyl">РОК &amp; ВИНИЛ</a></li>
-    <li><a href="blog.html" class="blog">БЛОГ</a></li>
-    <li><a href="contacts.html" class="contacts">КОНТАКТЫ</a></li>
-    <li class="search">
-        <form enctype="multipart/form-data" method="get" action="#" id="form-search-mobile">
-            <input type="search" name="s" value="" placeholder="Поиск" class="req"><span class="fa fa-search" onclick="$('#form-search-mobile').submit();"></span>
-        </form>
-    </li>
-    <script>
-    $('#form-search-mobile').submit(tryFormSubmit);
-    </script>
-</ul>
-</div>
-<script>
-$(window).scroll(function() {
-    if (typeof block4 !=='undefined') {
-        if (detect.parse(navigator.userAgent).browser.family == 'Firefox' || $(window).width() <= 971 || logodirect == 'showlogo') {
-            menu();
-        }
-    } else {
-        menu();
-    }
-});
-</script>
-<!-- end menu -->
+
+<!-- Page banner -->
+<section class="page-banner" style="background-image:url('rock/05.jpg');">
+    <h1>Рок & Винил</h1>
+</section>
 
 <div class="top-container">
 <div class="top-center">
