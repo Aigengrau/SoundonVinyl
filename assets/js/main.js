@@ -9,6 +9,18 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var MAIL = 'katkov@rockonvinyl.ru';
 
+  /* Подтверждаем, что скрипт действительно догрузился и выполняется.
+     Проверка сразу после этого файла ждёт класс js-ready: не увидит —
+     снимет js-anim, и страница станет статичной, но полностью видимой. */
+  document.documentElement.classList.add('js-ready');
+
+  /* Любая ошибка внутри не должна оставить половину сайта невидимой:
+     показываем всё и молча выходим. */
+  window.addEventListener('error', function () {
+    var h = document.documentElement;
+    h.className = h.className.replace(/\s*js-anim/, '');
+  });
+
   /* ---------- Мобильное меню ---------- */
   var burger = document.querySelector('.burger');
   var nav = document.getElementById('nav');

@@ -11,10 +11,13 @@
 <meta property="og:image" content="assets/img/show/stage-rock.jpg">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="assets/img/logo-sov.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<script>
+/* Прятать секции до прокрутки разрешаем только при живом JavaScript.
+   Класс снимается обратно сразу после main.js, если тот не отозвался. */
+(function(d){var h=d.documentElement;h.className+=(h.className?" ":"")+"js-anim";})(document);
+</script>
 </head>
 <body>
 
@@ -731,5 +734,12 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script>
+/* Исполняется сразу после main.js: обычный <script src> блокирующий,
+   поэтому если файл вырезал блокировщик, он не догрузился или упал с ошибкой —
+   класса js-ready нет, и мы возвращаем странице полную видимость. */
+(function(d){var h=d.documentElement;
+if(h.className.indexOf("js-ready")<0){h.className=h.className.replace(/\s*js-anim/,"");}})(document);
+</script>
 </body>
 </html>

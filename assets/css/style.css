@@ -84,7 +84,8 @@ ul{ margin:0; padding:0; list-style:none; }
   display:flex; align-items:center; gap:.9rem;
   margin:0 0 1.6rem;
 }
-.eyebrow::after{ content:""; flex:1; height:1px; background:var(--ink-14); }
+/* min-width страхует от подставного шрифта: линейка не съедает строку и не исчезает */
+.eyebrow::after{ content:""; flex:1 1 2rem; min-width:1.5rem; height:1px; background:var(--ink-14); }
 .eyebrow .idx{ color:var(--ink); font-variant-numeric:tabular-nums; }
 .lede{ font-size:var(--step-1); line-height:1.45; color:var(--ink); max-width:56ch; }
 .muted{ color:var(--ink-60); }
@@ -137,16 +138,24 @@ ul{ margin:0; padding:0; list-style:none; }
 .burger[aria-expanded="true"] span:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
 
 @media (max-width:1080px){
-  .nav{
-    position:fixed; inset:74px 0 auto; background:var(--paper);
+  /* Без скрипта бургер бесполезен: показываем меню обычной строкой,
+     чтобы по сайту можно было ходить и с выключенным JS. */
+  .top__in{ height:auto; flex-wrap:wrap; padding-block:.9rem; gap:.9rem 1.2rem; }
+  .nav{ width:100%; margin-left:0; flex-wrap:wrap; gap:.2rem 1.1rem; }
+  .nav a{ font-size:.92rem; }
+  .top__in .btn{ display:none; }
+
+  /* Скрипт жив — возвращаем бургер и выпадающую панель. */
+  .js-anim .top__in{ height:74px; flex-wrap:nowrap; padding-block:0; gap:1.5rem; }
+  .js-anim .burger{ display:block; }
+  .js-anim .nav{
+    position:fixed; inset:74px 0 auto; width:auto; background:var(--paper);
     flex-direction:column; gap:0; padding:1rem var(--gutter) 2rem;
     border-bottom:var(--rule); transform:translateY(-8px); opacity:0;
     pointer-events:none; transition:opacity .22s var(--ease), transform .22s var(--ease);
   }
-  .nav.is-open{ opacity:1; transform:none; pointer-events:auto; }
-  .nav a{ font-size:1.05rem; padding:.85rem 0; border-bottom:var(--rule); color:var(--ink); }
-  .burger{ display:block; }
-  .top__in .btn{ display:none; }
+  .js-anim .nav.is-open{ opacity:1; transform:none; pointer-events:auto; }
+  .js-anim .nav a{ font-size:1.05rem; padding:.85rem 0; border-bottom:var(--rule); color:var(--ink); }
 }
 
 /* =====================  КНОПКИ  ===================== */
@@ -454,11 +463,17 @@ ul{ margin:0; padding:0; list-style:none; }
 .d4{ animation-delay:.44s } .d5{ animation-delay:.57s } .d6{ animation-delay:.7s }
 .d7{ animation-delay:.83s } .d8{ animation-delay:.96s }
 
-/* =====================  ПОЯВЛЕНИЕ  ===================== */
-.rise{ opacity:0; transform:translateY(14px); transition:opacity .5s var(--ease), transform .5s var(--ease); }
-.rise.in{ opacity:1; transform:none; }
+/* =====================  ПОЯВЛЕНИЕ  =====================
+   Контент виден ВСЕГДА. Прятать его до прокрутки разрешено только тогда,
+   когда скрипт жив и подтвердил это классом js-anim на <html>.
+   Если JS отключён, вырезан блокировщиком или main.js не догрузился —
+   класса нет (или он снят по таймауту), и страница просто статична.
+   Раньше здесь было безусловное opacity:0 — и весь сайт ниже первого
+   экрана превращался в белый лист. Не повторять. */
+.js-anim .rise{ opacity:0; transform:translateY(14px); transition:opacity .5s var(--ease), transform .5s var(--ease); }
+.js-anim .rise.in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce){
-  .rise{ opacity:1; transform:none; transition:none; }
+  .js-anim .rise{ opacity:1; transform:none; transition:none; }
   .draw{ stroke-dasharray:none; stroke-dashoffset:0; animation:none; }
   .spin,.spin-r,.spin-lp{ animation:none; }
 }
