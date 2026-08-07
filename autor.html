@@ -1,237 +1,257 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="ru" class="">
+<html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Об авторе — ЗВУК НА ВИНИЛЕ с Павлом Катковым</title>
-    <meta name="keywords" content="звук на виниле, об авторе, павел катков, винил">
-    <meta name="description" content="Павел Катков — автор и ведущий проекта ЗВУК НА ВИНИЛЕ.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/jquery.color.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/futurelegal-layout.css">
-    <script src="assets/js/detect.min.js"></script>
-    <script src="assets/js/jquery.actual.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Об авторе — ЗВУК НА ВИНИЛЕ с Павлом Катковым</title>
+<meta name="description" content="Павел Катков — автор и ведущий проекта «ЗВУК НА ВИНИЛЕ»: зачем я делаю это, почему рок, почему винил и как попасть на программу.">
+<meta property="og:title" content="Об авторе — ЗВУК НА ВИНИЛЕ с Павлом Катковым">
+<meta property="og:description" content="Павел Катков — автор и ведущий проекта «ЗВУК НА ВИНИЛЕ»: зачем я делаю это, почему рок, почему винил и как попасть на программу.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="assets/img/show/stage-big.jpg">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/img/logo-sov.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="loader" style="display: none;"></div>
-<div class="load" style="visibility: visible !important">
 
-<!-- Top horizontal header -->
-<header class="site-header" id="siteHeader">
-    <div class="site-header-inner">
-        <button class="nav-toggle" type="button" aria-label="Меню"><i class="fa fa-bars"></i></button>
-        <nav class="nav-left">
-            <ul>
-                <li><a href="index.html" class="home">Главная</a></li>
-                <li><a href="about.html" class="about">О проекте</a></li>
-                <li><a href="autor.html" class="autor active">Об авторе</a></li>
-                <li><a href="newsproject.html" class="newsproject">Новости</a></li>
-            </ul>
-        </nav>
-        <div class="header-logo">
-            <a href="index.html">
-                <div class="logo-title">ЗВУК НА ВИНИЛЕ</div>
-                <div class="logo-divider"></div>
-                <div class="logo-subtitle">с Павлом Катковым</div>
-                <div class="logo-vinyls">
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                </div>
-            </a>
-        </div>
-        <nav class="nav-right">
-            <ul>
-                <li><a href="rockandvinyl.html" class="rockandvinyl">Рок & Винил</a></li>
-                <li><a href="blog.html" class="blog">Блог</a></li>
-                <li><a href="contacts.html" class="contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+<!-- ==================== ШАПКА ==================== -->
+<header class="top">
+  <div class="shell top__in">
+    <a class="brand" href="index.html" aria-label="ЗВУК НА ВИНИЛЕ — на главную">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <rect width="120" height="120" fill="#fff"/>
+        <polygon points="0,0 120,0 110,10 10,10" fill="var(--wood)"/>
+        <polygon points="120,0 120,120 110,110 110,10" fill="var(--wood)"/>
+        <polygon points="120,120 0,120 10,110 110,110" fill="var(--wood)"/>
+        <polygon points="0,120 0,0 10,10 10,110" fill="var(--wood)"/>
+        <g fill="none" stroke="var(--ink)" stroke-width="4.5">
+          <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="15"/>
+        </g>
+        <circle cx="60" cy="60" r="4.5" fill="var(--ink)"/>
+      </svg>
+      <span>
+        <b>ЗВУК НА ВИНИЛЕ</b>
+        <i>с Павлом Катковым</i>
+      </span>
+    </a>
+
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="autor.html" aria-current="page">Об авторе</a>
+      <a href="rockandvinyl.html">Рок &amp; винил</a>
+      <a href="blog.html">Блог</a>
+      <a href="newsproject.html">Новости</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <a class="btn btn--sm btn--solid" href="contacts.html#invite">Пригласить шоу</a>
+  </div>
 </header>
-<script>
-(function(){
-    var header = document.getElementById('siteHeader');
-    var toggle = header && header.querySelector('.nav-toggle');
-    if (toggle) {
-        toggle.addEventListener('click', function(){
-            header.classList.toggle('menu-open');
-        });
-    }
-})();
-</script>
 
-<!-- Page banner -->
-<section class="page-banner" style="background-image:url('rock/03.jpg');">
-    <h1>Об авторе</h1>
+<main id="top">
+
+<!-- ==================== ШАПКА СТРАНИЦЫ ==================== -->
+<section class="page-head">
+  <div class="shell page-head__grid">
+    <div>
+      <p class="eyebrow rise"><span class="idx">01</span> Об авторе</p>
+      <h1 class="rise">Павел Катков</h1>
+      <p class="lede rise">Автор и ведущий шоу «ЗВУК НА ВИНИЛЕ», создатель жанровых проектов «Рок на виниле», «Блюз на виниле» и «Джаз на виниле». Резидент Клуба Алексея Козлова.</p>
+    </div>
+    <svg class="rise" viewBox="0 0 200 200" aria-hidden="true">
+        <g class="k-line k-w" stroke-width="1.4">
+          <circle cx="92" cy="108" r="72"/>
+          <circle cx="92" cy="108" r="54"/>
+          <circle cx="92" cy="108" r="36"/>
+          <circle cx="92" cy="108" r="18"/>
+        </g>
+        <path class="k-line k-k" stroke-width="1.6" d="M186 22 L138 74 L128 96"/>
+        <g class="spin-lp" style="transform-origin:92px 108px">
+          <circle class="k-line k-k" cx="92" cy="108" r="64" stroke-dasharray="1 10" stroke-width="1" opacity=".55"/>
+        </g>
+        <circle class="k-fw" cx="92" cy="108" r="4.5"/>
+        <circle class="k-fk" cx="186" cy="22" r="4"/>
+      </svg>
+  </div>
 </section>
 
-<div class="top-container">
-<div class="top-center">
-<div class="top-content">
-<div id="scroll-top"></div>
-
-<div class="com-page component">
-
-<div class="component-head-vr"></div>
-<div class="component-head-block">
-<h1>Об авторе</h1>
-</div>
-
-<div class="component-content" style="margin-top:30px; line-height:30px;">
-
-<p>Здравствуйте!</p>
-
-<p>Меня зовут Павел Катков, я автор и ведущий проекта «ЗВУК НА ВИНИЛЕ».</p>
-
-<p>Приглашаю Вас на наши программы.</p>
-
-<p><strong>ЗАЧЕМ Я ДЕЛАЮ ЭТО?</strong></p>
-
-<p>С детства я слушал музыку, ходил на концерты, а позже — играл рок-музыку сам. Музыка всегда привлекала меня, мне хотелось ей заниматься.</p>
-
-<p>С годами, став юристами, мы с братом даже основали успешную юридическую компанию, специализирующуюся на интеллектуальной собственности и решающую вопросы музыкального права и медиа-бизнеса.</p>
-
-<p>Однако всё это было не то. Всё это имело отношение скорее к бизнесу, чем к музыке. А мне хотелось заниматься музыкой. Поэтому я создал программу «ЗВУК НА ВИНИЛЕ».</p>
-
-<p><strong>ПОЧЕМУ РОК?</strong></p>
-
-<p>Я люблю не только рок. Я слушаю джаз, фанк, классическую музыку и много чего ещё. Однако рок — особенный.</p>
-
-<p>Рок повлиял на современный мир и на людей в нём, пожалуй, больше, чем любой другой жанр. Постоянно изменяясь, трансформируясь, он впитывал в себя элементы из разных источников. Блюз, джаз, фолк, авангард, электроника — всё шло в топку рока, принималось им и становилось его частью.</p>
-
-<p>При этом рок, как ни странно, един. Если Вы последовательно послушаете рок 60-х, 70-х, 80-х, 90-х, то с одной стороны, увидите, насколько он разный, а с другой — насколько он преемственен. Мелодика битлов до сих пор проскальзывает в британских группах, а макабрические эксперименты Блэк Саббат сорокалетней (!) давности легко узнаются в релизах современных металлистов.</p>
-
-<p>И вот эти две черты — смелость и новаторство с одной стороны и наличие корней и преемственность с другой вкупе с огромным неослабевающим влиянием на людей делает рок особенным.</p>
-
-<p>И за это я его люблю.</p>
-
-<p><strong>ПОЧЕМУ ВИНИЛ?</strong></p>
-
-<p>Мы живём в быстрое время. Возможно, слишком быстрое. При всём богатстве выбора и практически безграничном доступе к информации цифровой мир делает восприятие поверхностным. Однако есть музыка, требующая концентрации, внимания, вовлечения — больших, чем при потрековом стриминге. Винил — это способ вернуть нам ценность музыки и концентрацию на ней.</p>
-
-<p>Другая причина — целостность восприятия. Винил позволяет донести до нас не только музыку, но весь альбом, и некоторые из них — настоящие арт-объекты. Разница между винилом и, скажем, стримингом примерно такая же, как между качественно изданной книгой и её же вордовым файлом. Цифровой трек — это просто файл. Винил — это история, обложка, звукорежиссура, буклет, звук.</p>
-
-<p>Отдельный аспект винилового звука — возможность услышать запись такой, как она была сделана изначально. Дело в том, что если запись старая (60-е, 70-е и далее), то в дальнейшем она перевыпускалась не «как есть», а с попыткой улучшить исходную запись. Такой подход, возможно, убрал технические огрехи, однако породил совершенно лишнюю «борьбу громкостей», а главное — окончательно похоронил первоисточник под грудой цифровых ремастерингов. Сегодня, после CD, mp3, стриминга, даже любопытно, как же это должно играть в действительности, как оно было записано?</p>
-
-<p>При этом о виниловом звуке ходит много мифов. Мол, что на иглу не поставь, всё будет лучше звучать, чем на цифре. Я не специалист в технологиях, но думаю, что это не так. Хорошая запись и в цифре будет звучать прилично, а плохую и винил не спасёт. Однако если запись сделана качественно, звукорежиссёр вложил душу, винил записан хорошо — такая запись на игле будет звучать превосходно!</p>
-
-<p><strong>КАК ПОПАСТЬ НА ПРОГРАММУ?</strong></p>
-
-<p>Живые программы ЗВУК НА ВИНИЛЕ всегда проходят в новых местах. Чтобы узнать о месте проведения, нужно подписаться на рассылку или <a href="contacts.html">написать мне</a>.</p>
-
-<p><strong>До встречи на «ЗВУК НА ВИНИЛЕ» с Павлом Катковым!</strong></p>
-
-</div>
-
-</div>
-
-<!-- banners -->
-<div class="banners component">
-    <div class="banners-hr"></div>
-    <div class="component-head-vr"></div>
-    <div class="component-head-block">
-        <div>Друзья и партнёры</div>
+<!-- ==================== ЗАЧЕМ ==================== -->
+<section class="sec sec--rule">
+  <div class="shell">
+    <div class="cols cols--2">
+      <div class="prose rise">
+        <p>Здравствуйте!</p>
+        <p>Меня зовут <b>Павел Катков</b>, я автор и ведущий проекта «ЗВУК НА ВИНИЛЕ».
+        Приглашаю вас на наши программы.</p>
+      </div>
+      <div class="rise">
+        <span class="sub">Коротко</span>
+        <ul class="contact-list">
+          <li><span class="k">Роль</span><span class="v">Автор, ведущий и продюсер шоу</span></li>
+          <li><span class="k">Проекты</span><span class="v">«Рок на виниле», «Блюз на виниле», «Джаз на виниле»,<br>«Фанк на виниле», «Рейв на виниле», «Рэп на виниле»</span></li>
+          <li><span class="k">Резидентство</span><span class="v">Клуб Алексея Козлова</span></li>
+          <li><span class="k">Ещё</span><span class="v">Продюсер виниловой программы международного<br>блюзового фестиваля British Blues Invasion</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="banners-images">
-        <a href="http://jazzesse.ru/" target="_blank"><img src="banners/vinylvintage.jpg" alt=""></a>
-        <a href="http://inrock.ru/" target="_blank"><img src="banners/inrock.png" alt=""></a>
-        <a href="http://colisium.org/" target="_blank"><img src="banners/logo_colisium.png" alt=""></a>
-        <a href="http://katkovpartners.ru/" target="_blank"><img src="banners/katkov.png" alt=""></a>
-        <a href="http://insomniafest.ru/" target="_blank"><img src="banners/insomnia.jpg" alt=""></a>
-        <a href="http://arutunov.ru/" target="_blank"><img src="banners/arutunov.jpg" alt=""></a>
-        <a href="http://intermedia.ru/" target="_blank"><img src="banners/InterMedia.png" alt=""></a>
-        <a href="http://vinyl-time.com/" target="_blank"><img src="banners/vinyl_time.png" alt=""></a>
-        <a href="http://nota.ru/" target="_blank"><img src="banners/notalogo.jpg" alt=""></a>
-        <a href="https://www.hotdraftproductions.com/" target="_blank"><img src="banners/british.jpg" alt=""></a>
-        <a href="https://www.newartvinyl.ru/" target="_blank"><img src="banners/NEWARTVINYL1.jpg" alt=""></a>
-        <a href="https://www.stereomanclub.ru/" target="_blank"><img src="banners/STEREOMANCLUB1.jpg" alt=""></a>
-        <a href="http://www.eridanaudio.ru/" target="_blank"><img src="banners/eridan.png" alt=""></a>
-        <a href="https://kozlovclub.ru/" target="_blank"><img src="banners/kozlov.jpg" alt=""></a>
+  </div>
+</section>
+
+<!-- ==================== ЧЕТЫРЕ ВОПРОСА ==================== -->
+<section class="sec sec--rule">
+  <div class="shell">
+    <div class="cols cols--2" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <div class="rise">
+        <p class="eyebrow"><span class="idx">02</span> Зачем я делаю это</p>
+        <h2 style="font-size:var(--step-3);margin-bottom:1.4rem">Мне хотелось<br>заниматься музыкой</h2>
+      </div>
+      <div class="prose rise">
+        <p>С детства я слушал музыку, ходил на концерты, а позже — играл рок-музыку сам.
+        Музыка всегда привлекала меня, мне хотелось ей заниматься.</p>
+        <p>С годами, став юристами, мы с братом даже основали успешную юридическую компанию,
+        специализирующуюся на интеллектуальной собственности и решающую вопросы музыкального
+        права и медиа-бизнеса.</p>
+        <p>Однако всё это было не то. Всё это имело отношение скорее к бизнесу, чем к музыке.
+        А мне хотелось заниматься музыкой. Поэтому я создал программу «ЗВУК НА ВИНИЛЕ».</p>
+      </div>
     </div>
-</div>
-<!-- end banners -->
 
-</div>
-</div>
-</div>
+    <div class="cols cols--2" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <div class="rise">
+        <p class="eyebrow"><span class="idx">03</span> Почему рок</p>
+        <h2 style="font-size:var(--step-3);margin-bottom:1.4rem">Смелость<br>и корни</h2>
+      </div>
+      <div class="prose rise">
+        <p>Я люблю не только рок. Я слушаю джаз, фанк, классическую музыку и много чего ещё.
+        Однако рок — особенный.</p>
+        <p>Рок повлиял на современный мир и на людей в нём, пожалуй, больше, чем любой другой
+        жанр. Постоянно изменяясь, трансформируясь, он впитывал в себя элементы из разных
+        источников. Блюз, джаз, фолк, авангард, электроника — всё шло в топку рока,
+        принималось им и становилось его частью.</p>
+        <p>При этом рок, как ни странно, един. Если вы последовательно послушаете рок 60-х,
+        70-х, 80-х, 90-х, то с одной стороны увидите, насколько он разный, а с другой —
+        насколько он преемственен. Мелодика битлов до сих пор проскальзывает в британских
+        группах, а макабрические эксперименты Black Sabbath сорокалетней (!) давности легко
+        узнаются в релизах современных металлистов.</p>
+        <p>И вот эти две черты — смелость и новаторство с одной стороны, наличие корней
+        и преемственность с другой, вкупе с огромным неослабевающим влиянием на людей —
+        делают рок особенным. И за это я его люблю.</p>
+      </div>
+    </div>
 
-<div class="bottom-container" id="footer">
-<div class="bottom-bg"></div>
-<div class="bottom-footer row">
-    <div class="bottom-footer-center col-md-4 col-md-push-4">
-        <div class="bottom-subscribe">
-<div class="subscribe-head">Подписаться на рассылку</div>
-<form id="subscribe-form">
-<input id="subscribe-email" name="subscribe_email" onfocus="if(this.value=='Введите email') this.value='';" onblur="if(!this.value) this.value='Введите email';" type="email" value="Введите email" autocomplete="off">
-<div id="subscribe-submit"><button type="submit">Подписаться</button><div id="subscribe-spinner"></div></div>
-<div class="politika"><input type="checkbox" required=""> <span>Даю согласие на обработку моих персональных данных, с условиями Политики ознакомлен</span></div>
-</form>
+    <div class="cols cols--2" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <div class="rise">
+        <p class="eyebrow"><span class="idx">04</span> Почему винил</p>
+        <h2 style="font-size:var(--step-3);margin-bottom:1.4rem">Целостность<br>восприятия</h2>
+        <p class="small muted">Цифровой трек — это просто файл. Винил — это история,
+        обложка, звукорежиссура, буклет, звук.</p>
+      </div>
+      <div class="prose rise">
+        <p>Мы живём в быстрое время. Возможно, слишком быстрое. При всём богатстве выбора
+        и практически безграничном доступе к информации цифровой мир делает восприятие
+        поверхностным. Однако есть музыка, требующая концентрации, внимания, вовлечения —
+        больших, чем при потрековом стриминге. Винил — это способ вернуть нам ценность
+        музыки и концентрацию на ней.</p>
+        <p>Другая причина — целостность восприятия. Винил позволяет донести до нас не только
+        музыку, но весь альбом, и некоторые из них — настоящие арт-объекты. Разница между
+        винилом и, скажем, стримингом примерно такая же, как между качественно изданной
+        книгой и её же вордовым файлом.</p>
+        <p>Отдельный аспект винилового звука — возможность услышать запись такой, как она была
+        сделана изначально. Если запись старая (60-е, 70-е и далее), то в дальнейшем она
+        перевыпускалась не «как есть», а с попыткой улучшить исходник. Такой подход, возможно,
+        убрал технические огрехи, однако породил совершенно лишнюю «борьбу громкостей»,
+        а главное — окончательно похоронил первоисточник под грудой цифровых ремастерингов.
+        Сегодня, после CD, mp3 и стриминга, даже любопытно: как же это должно играть
+        в действительности, как оно было записано?</p>
+        <p>При этом о виниловом звуке ходит много мифов. Мол, что на иглу ни поставь, всё
+        будет лучше звучать, чем в цифре. Я не специалист в технологиях, но думаю, что это
+        не так. Хорошая запись и в цифре будет звучать прилично, а плохую и винил не спасёт.
+        Однако если запись сделана качественно, звукорежиссёр вложил душу, винил записан
+        хорошо — такая запись на игле будет звучать превосходно!</p>
+      </div>
+    </div>
+
+    <div class="cols cols--2">
+      <div class="rise">
+        <p class="eyebrow"><span class="idx">05</span> Как попасть на программу</p>
+        <h2 style="font-size:var(--step-3);margin-bottom:1.4rem">Всегда<br>новое место</h2>
+      </div>
+      <div class="prose rise">
+        <p>Живые программы «ЗВУК НА ВИНИЛЕ» всегда проходят в новых местах. Чтобы узнать
+        о месте проведения, нужно подписаться на рассылку или
+        <a href="contacts.html#invite">написать мне</a>.</p>
+        <p><b>До встречи на «ЗВУК НА ВИНИЛЕ» с Павлом Катковым!</b></p>
+        <div class="btn-row">
+          <a class="btn btn--solid" href="contacts.html#invite">Написать автору <span class="arrow">→</span></a>
+          <a class="btn" href="blog.html">Читать блог</a>
         </div>
+      </div>
     </div>
-    <div class="bottom-footer-left col-md-4 col-md-pull-4">
-        <div class="bottom-social">
-            <a target="_blank" href="https://vk.com/rockonvinyl"><i class="fa fa-vk"></i></a>
-            <a target="_blank" href="https://www.facebook.com/rockonvinyl"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" href="https://twitter.com/ROCKONVINYL"><i class="fa fa-twitter"></i></a>
-            <a target="_blank" href="https://www.instagram.com/rockonvinyl"><i class="fa fa-instagram"></i></a>
-        </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__in">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:1.2rem">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+        <rect width="120" height="120" fill="#fff"/>
+        <polygon points="0,0 120,0 110,10 10,10" fill="var(--wood)"/>
+        <polygon points="120,0 120,120 110,110 110,10" fill="var(--wood)"/>
+        <polygon points="120,120 0,120 10,110 110,110" fill="var(--wood)"/>
+        <polygon points="0,120 0,0 10,10 10,110" fill="var(--wood)"/>
+        <g fill="none" stroke="var(--ink)" stroke-width="4.5">
+          <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="15"/>
+        </g>
+        <circle cx="60" cy="60" r="4.5" fill="var(--ink)"/>
+      </svg>
+          <span><b>ЗВУК НА ВИНИЛЕ</b><i>с Павлом Катковым</i></span>
+        </a>
+        <p class="small muted" style="max-width:38ch">
+          Авторское виниловое шоу Павла Каткова. Направление «Винил» экосистемы
+          ФУНДАМЕНТ — событийный маркетинг и деловые события.
+        </p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="autor.html">Об авторе</a></li>
+          <li><a href="rockandvinyl.html">Рок &amp; винил</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="newsproject.html">Новости проекта</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Экосистема</h4>
+        <ul>
+          <li><a href="https://futurelegal.ru/" target="_blank" rel="noopener">futurelegal.ru ↗</a></li>
+          <li><a href="https://online.katkov.school/school" target="_blank" rel="noopener">online.katkov.school ↗</a></li>
+          <li><a href="https://biometriclabs.ru/ai/" target="_blank" rel="noopener">biometriclabs.ru/ai ↗</a></li>
+          <li><a href="https://vk.com/rockonvinyl" target="_blank" rel="noopener">vk.com/rockonvinyl ↗</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="bottom-footer-right col-md-4">
-        <div class="bottom-copyright">
-            <p>Copyright &copy; 2017-2020 rockonvinyl.ru</p>
-            <p>ЗВУК НА ВИНИЛЕ с Павлом Катковым</p>
-            <p>+7 985 765 34 22</p>
-            <p>katkov@rockonvinyl.ru</p>
-        </div>
+    <div class="foot__bar">
+      <span>© 2017—2026 ЗВУК НА ВИНИЛЕ с Павлом Катковым</span>
+      <span>+7 (985) 765-34-22 · katkov@rockonvinyl.ru</span>
     </div>
-</div>
-</div>
+  </div>
+</footer>
 
-<div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="ModalSubscribeLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body" style="overflow:hidden; padding:30px 10px 30px 10px;">
-                <div style="float:left;" class="msg"></div> <div style="float:right;"><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></div>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-$('#subscribe-form').submit(function(e){
-    e.preventDefault();
-    $('#ModalSubscribe').modal();
-    $('#ModalSubscribe .modal-body .msg').html('Спасибо за подписку!');
-    $('#subscribe-email').val('Введите email');
-});
-</script>
-
-<a class="go-top">
-    <div class="triangle-up"></div>
-    <div class="rectangle"><span class="fa fa-angle-up"></span></div>
-</a>
-
-</div>
-<script>
-setTimeout(function(){
-    $('.loader').hide();
-    $('.load').attr('style', 'visibility: visible !important');
-}, 700);
-</script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
