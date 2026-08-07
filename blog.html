@@ -1,274 +1,210 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="ru" class="">
+<html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Блог — ЗВУК НА ВИНИЛЕ с Павлом Катковым</title>
-    <meta name="keywords" content="звук на виниле, блог, павел катков, винил">
-    <meta name="description" content="Блог проекта ЗВУК НА ВИНИЛЕ с Павлом Катковым.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/jquery.color.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/futurelegal-layout.css">
-    <script src="assets/js/detect.min.js"></script>
-    <script src="assets/js/jquery.actual.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Блог — ЗВУК НА ВИНИЛЕ с Павлом Катковым</title>
+<meta name="description" content="Блог Павла Каткова: интервью с Алексеем Козловым, разнообразие жанров, иммерсивность шоу, география пластинок и секреты винилового тракта.">
+<meta property="og:title" content="Блог — ЗВУК НА ВИНИЛЕ с Павлом Катковым">
+<meta property="og:description" content="Блог Павла Каткова: интервью с Алексеем Козловым, разнообразие жанров, иммерсивность шоу, география пластинок и секреты винилового тракта.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="assets/img/photo/mic.jpg">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/img/logo-sov.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="loader" style="display: none;"></div>
-<div class="load" style="visibility: visible !important">
 
-<!-- Top horizontal header -->
-<header class="site-header" id="siteHeader">
-    <div class="site-header-inner">
-        <button class="nav-toggle" type="button" aria-label="Меню"><i class="fa fa-bars"></i></button>
-        <nav class="nav-left">
-            <ul>
-                <li><a href="index.html" class="home">Главная</a></li>
-                <li><a href="about.html" class="about">О проекте</a></li>
-                <li><a href="autor.html" class="autor">Об авторе</a></li>
-                <li><a href="newsproject.html" class="newsproject">Новости</a></li>
-            </ul>
-        </nav>
-        <div class="header-logo">
-            <a href="index.html">
-                <div class="logo-title">ЗВУК НА ВИНИЛЕ</div>
-                <div class="logo-divider"></div>
-                <div class="logo-subtitle">с Павлом Катковым</div>
-                <div class="logo-vinyls">
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                    <span class="vinyl"></span>
-                </div>
-            </a>
-        </div>
-        <nav class="nav-right">
-            <ul>
-                <li><a href="rockandvinyl.html" class="rockandvinyl">Рок & Винил</a></li>
-                <li><a href="blog.html" class="blog active">Блог</a></li>
-                <li><a href="contacts.html" class="contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+<!-- ==================== ШАПКА ==================== -->
+<header class="top">
+  <div class="shell top__in">
+    <a class="brand" href="index.html" aria-label="ЗВУК НА ВИНИЛЕ — на главную">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <rect width="120" height="120" fill="#fff"/>
+        <polygon points="0,0 120,0 110,10 10,10" fill="var(--wood)"/>
+        <polygon points="120,0 120,120 110,110 110,10" fill="var(--wood)"/>
+        <polygon points="120,120 0,120 10,110 110,110" fill="var(--wood)"/>
+        <polygon points="0,120 0,0 10,10 10,110" fill="var(--wood)"/>
+        <g fill="none" stroke="var(--ink)" stroke-width="4.5">
+          <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="15"/>
+        </g>
+        <circle cx="60" cy="60" r="4.5" fill="var(--ink)"/>
+      </svg>
+      <span>
+        <b>ЗВУК НА ВИНИЛЕ</b>
+        <i>с Павлом Катковым</i>
+      </span>
+    </a>
+
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="autor.html">Об авторе</a>
+      <a href="rockandvinyl.html">Рок &amp; винил</a>
+      <a href="blog.html" aria-current="page">Блог</a>
+      <a href="newsproject.html">Новости</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <a class="btn btn--sm btn--solid" href="contacts.html#invite">Пригласить шоу</a>
+  </div>
 </header>
-<script>
-(function(){
-    var header = document.getElementById('siteHeader');
-    var toggle = header && header.querySelector('.nav-toggle');
-    if (toggle) {
-        toggle.addEventListener('click', function(){
-            header.classList.toggle('menu-open');
-        });
-    }
-})();
-</script>
 
-<!-- Page banner -->
-<section class="page-banner" style="background-image:url('rock/06.jpg');">
-    <h1>Блог</h1>
+<main id="top">
+
+<!-- ==================== ШАПКА СТРАНИЦЫ ==================== -->
+<section class="page-head">
+  <div class="shell page-head__grid">
+    <div>
+      <p class="eyebrow rise"><span class="idx">01</span> Блог</p>
+      <h1 class="rise">Блог автора</h1>
+      <p class="lede rise">Тексты Павла Каткова о шоу, коллекционировании, виниловом тракте и людях, которые поднимались на сцену «ЗВУК НА ВИНИЛЕ».</p>
+    </div>
+    <svg class="rise" viewBox="0 0 200 200" aria-hidden="true">
+        <g class="k-line k-w" stroke-width="1.4">
+          <circle cx="92" cy="108" r="72"/>
+          <circle cx="92" cy="108" r="54"/>
+          <circle cx="92" cy="108" r="36"/>
+          <circle cx="92" cy="108" r="18"/>
+        </g>
+        <path class="k-line k-k" stroke-width="1.6" d="M186 22 L138 74 L128 96"/>
+        <g class="spin-lp" style="transform-origin:92px 108px">
+          <circle class="k-line k-k" cx="92" cy="108" r="64" stroke-dasharray="1 10" stroke-width="1" opacity=".55"/>
+        </g>
+        <circle class="k-fw" cx="92" cy="108" r="4.5"/>
+        <circle class="k-fk" cx="186" cy="22" r="4"/>
+      </svg>
+  </div>
 </section>
 
-<div class="top-container">
-<div class="top-center">
-<div class="top-content">
-<div id="scroll-top"></div>
-
-<div class="mod-blog component">
-
-<div class="component-head-vr"></div>
-<div class="component-head-block">
-<h1>Блог</h1>
-</div>
-
-<!-- Запись 1 -->
-<div class="article">
-    <div class="article-vr"></div>
-    <div class="article-date">23 Фев 2020</div>
-
-    <div class="article-head">Интервью с Алексеем Козловым</div>
-    <div class="article-txt">
-        <p>У меня на шоу есть традиция — приглашать на интервью известных музыкантов, продюсеров, звукорежиссёров, дизайнеров и других людей, имеющих отношение к виниловой культуре и музыке на виниловых пластинках.</p>
-        <p>Это интересный формат, ведь обычно интервью берут в студии, а тут человек поднимается на сцену лучшего джаз-клуба мира, и в рамках винилового шоу, среди проигрывателей и пластинок, отвечает на мои вопросы, рассказывает о себе, о музыке, и конечно же — о пластинках.</p>
-        <p>Гостями шоу были самые разные люди. Николай Арутюнов (Лига Блюза, Funky Soul), которому я задал вопрос, как ему пелось вместе с Би Би Кингом, Артём Кукаев, артист Российского национального оркестра (РНО), одного из 20 лучших оркестров мира, и владелец собственной мастерской музыкальных инструментов, Илья Мазаев, рассказавший о своей работе на студиях легендарных звукорежиссеров Police, Genesis, Pet Shop Boys и Tears For Fears, Анна Королёва, вокалистка, саксофонистка, создательница собственной вокальной школы MultiVoice и бэнд-лидер ярчайших музыкальных джазовых проектов, Tony Remi — музыкант Annie Lennox, Tower Of Power, The Crusaders и Shakatak, Иннес Сайбин, гитарист Роберта Планта периода Fate Of Nations, и многие другие.</p>
-        <p>А сейчас я взял интервью у Алексея Козлова.</p>
-        <p>Мэтр крайне редко даёт интервью, и это уникальная возможность узнать о том, как записывались пластинки «Арсенала» из первых уст — от его лидера Алексея Козлова, легендарного российского джазмена, президента лучшего джаз-клуба мира.</p>
-        <p><strong>1 марта, 18:00, Клуб Алексея Козлова, зал The Beat</strong></p>
-        <p>ЗВУК НА ВИНИЛЕ с Павлом Катковым</p>
-    </div>
-    <div class="article-tags"> <a href="#">#винил</a> <a href="#">#воскресеньевинила</a> <a href="#">#ЖиваяИсторияМузыки</a> <a href="#">#звукнавиниле</a> <a href="#">#интервью</a> <a href="#">#Клуб Алексея Козлова</a> <a href="#">#спавломкатковым</a> <a href="#">#шоу</a> </div>
-</div>
-
-<!-- Запись 2 -->
-<div class="article">
-    <div class="article-vr"></div>
-    <div class="article-date">20 Фев 2020</div>
-
-    <div class="article-head">Р — Разнообразие</div>
-    <div class="article-txt">
-        <p>В первое воскресенье весны я снова выступаю в лучшем джаз-клубе мира. А поговорить с вами хочу — о разнообразии.</p>
-        <p>Когда я запустил свой самый первый виниловый проект, он назывался РОК НА ВИНИЛЕ. Потом мне стало тесно в границах одного жанра, и я запустил БЛЮЗ НА ВИНИЛЕ, ДЖАЗ НА ВИНИЛЕ, ФАНК НА ВИНИЛЕ, РЭП НА ВИНИЛЕ и РЕЙВ НА ВИНИЛЕ.</p>
-        <p>В рамках чего-то одного мне было тесно всегда: помню, я как-то раз сделал серию из шестнадцати (!) шоу, посвящая каждые два одному артисту или группе. Это было здорово, но мне хотелось разнообразия.</p>
-        <p>И я нашел его в Клубе Алексея Козлова. Казалось бы, джаз-клуб номер 1 в мире, но на его трёх сценах можно увидеть и услышать джаз, фанк, соул, фьюжн, рок, блюз, world music, фолк, кабаре и цирк, детские хоры, песни русского севера, и — моё виниловое шоу.</p>
-        <p>К разнообразию я пришёл и на программах. Теперь за один вечер мои слушатели погружаются в историю самых разных жанров. Сейчас это рок, нью-вейв, фанк и джаз. На прошлом шоу звучал Elvis Presley, George Harrison, The Beatles, Led Zeppelin, Queen, David Bowie, Duran Duran, James Brown, Weather Report, Арсенал, Rolling Stones, а также новоорлеанский фанк из коллекции Михаила Мишуриса и индийская народная музыка.</p>
-        <p>А что вы хотели бы услышать на ближайшем шоу?</p>
-        <p>Ближайшее шоу 1 марта, 18:00, Клуб Алексея Козлова, зал The Beat.</p>
-        <p>Павел Катков<br>ЗВУКНАВИНИЛЕ.РФ</p>
-    </div>
-    <div class="article-tags"> <a href="#">#винил</a> <a href="#">#воскресеньевинила</a> <a href="#">#живаяисториязвука</a> <a href="#">#звукнавиниле</a> <a href="#">#Клуб Алексея Козлова</a> <a href="#">#спавломкатковым</a> <a href="#">#шоу</a> </div>
-</div>
-
-<!-- Запись 3 -->
-<div class="article">
-    <div class="article-vr"></div>
-    <div class="article-date">29 Янв 2020</div>
-
-    <div class="article-head">А иммерсивное ли шоу?</div>
-    <div class="article-txt">
-        <p>Я тут задумался над модным ныне термином «иммерсивное шоу», и мне объяснили, что это значит «с вовлечением публики». Коли так, то мой «ЗВУК НА ВИНИЛЕ» это самое настоящее иммерсивное шоу!</p>
-        <p>Посудите сами: в номере «Пластинки с выставки» публика сама выбирает следующую пластинку, в номере «Звуковой эксперимент» зритель поднимается на сцену и в наушниках сравнивает разные фонограммы (а аудитория по выражению лица угадывает запись — победитель), а в рубрике «Обратная связь» прекрасная зрительница вслепую выбирает победителя, который получает в подарок билет на следующее шоу.</p>
-        <p>Очень скоро у вас будет шанс проверить нашу иммерсивность:<br>
-        <strong>02.02. ВОСКРЕСЕНЬЕ ВИНИЛА с Павлом Катковым</strong>: рок, джаз, фанк, нью-вейв, Клуб Алексея Козлова.</p>
-    </div>
-    <div class="article-tags"> <a href="#">#bluesonvinyl</a> <a href="#">#воскресеньевинила</a> <a href="#">#герои80х</a> <a href="#">#живаяисториязвука</a> <a href="#">#Клуб Алексея Козлова</a> <a href="#">#ньювейв</a> <a href="#">#спавломкатковым</a> </div>
-</div>
-
-<!-- Запись 4 -->
-<div class="article">
-    <div class="article-vr"></div>
-    <div class="article-date">20 Дек 2019</div>
-
-    <div class="article-head">География Роллинг Стоунз и рождённые в декабре</div>
-    <div class="article-txt">
-        <p>Есть у коллекционеров такое понятие — география, и это интересная тема.</p>
-        <p>Большинство пластинок родом из известной нам части ойкумены. Великобритания и США (родина большинства топовых групп), Германия и Япония (эти страны так наладили производство, что иные их пластинки не уступают оригиналам из стран происхождения группы), Голландия (эти просто много навыпускали для европейского рынка).</p>
-        <p>Такие пластинки держал в руках почти каждый коллекционер. А как насчёт мозамбикского Deep Purple? А корейский Megadeth? А греческий Genesis? Вот это уже интересно, и даже не столько музыкально, сколь географически: экзотика.</p>
-        <p>Вот и у меня недавно появилась новая «географическая» пластинка — альбом Some Girls группы The Rolling Stones, Made In India. Злые языки пророчили мне разочарование, но я поставил её на иглу и сердце моё запело — играет, как нужно!</p>
-        <p>Кстати, в эти дни упомянуть эту пластинку крайне уместно, ведь 18 декабря весь цивилизованный мир праздновал 76-летие Кита Ричардса!</p>
-    </div>
-    <div class="article-tags"> <a href="#">#TheRollingStones</a> <a href="#">#географияпластинок</a> <a href="#">#живаяисториязвука</a> <a href="#">#Индия</a> <a href="#">#спавломкатковым</a> </div>
-</div>
-
-<!-- Запись 5 -->
-<div class="article">
-    <div class="article-vr"></div>
-    <div class="article-date">01 Ноя 2019</div>
-
-    <div class="article-head">Секреты винила</div>
-    <div class="article-txt">
-        <p>Загадаю загадку — о скольких объектах на этих картинках можно рассказать интересную историю? И сам же отвечу — об очень многих. Виниловый тракт — особая часть нашего шоу. Ведь очень важно, какую технику мы используем для прослушивания, какова её история.</p>
-        <p>На игле Victor 1978 года оригинальная пластинка ELO 1977 года выпуска. Для шоу мы используем иглы Victor и Ortofon. Первая из них — уникальный винтаж конца 70-х, а вторая — легендарный «крючконосый» шелл запатентованного внешнего вида, мгновенно узнаваемого виниломанами всего мира.</p>
-        <p>Проигрыватель — легендарный винтажный Техникс 1210. Первые устройства этой линейки начали выходить ещё в 1972 году, когда Deep Purple впервые исполнили Smoke On The Water. Этот аппарат настолько прост и надёжен, что служит диск-жокеям всего мира до сих пор.</p>
-        <p>Фонокорректор — сердце тракта. Мы используем фонокорректор российской hi-end компании Eridanaudio марки Pulsar, и он обеспечивает классный звук.</p>
-    </div>
-    <div class="article-tags"> <a href="#">#technics</a> <a href="#">#воскресеньевинила</a> <a href="#">#звукнавиниле</a> <a href="#">#Клуб Алексея Козлова</a> <a href="#">#спавломкатковым</a> </div>
-</div>
-
-</div>
-
-<!-- banners -->
-<div class="banners component">
-    <div class="banners-hr"></div>
-    <div class="component-head-vr"></div>
-    <div class="component-head-block">
-        <div>Друзья и партнёры</div>
-    </div>
-    <div class="banners-images">
-        <a href="http://jazzesse.ru/" target="_blank"><img src="banners/vinylvintage.jpg" alt=""></a>
-        <a href="http://inrock.ru/" target="_blank"><img src="banners/inrock.png" alt=""></a>
-        <a href="http://colisium.org/" target="_blank"><img src="banners/logo_colisium.png" alt=""></a>
-        <a href="http://katkovpartners.ru/" target="_blank"><img src="banners/katkov.png" alt=""></a>
-        <a href="http://insomniafest.ru/" target="_blank"><img src="banners/insomnia.jpg" alt=""></a>
-        <a href="http://arutunov.ru/" target="_blank"><img src="banners/arutunov.jpg" alt=""></a>
-        <a href="http://intermedia.ru/" target="_blank"><img src="banners/InterMedia.png" alt=""></a>
-        <a href="http://vinyl-time.com/" target="_blank"><img src="banners/vinyl_time.png" alt=""></a>
-        <a href="http://nota.ru/" target="_blank"><img src="banners/notalogo.jpg" alt=""></a>
-        <a href="https://www.hotdraftproductions.com/" target="_blank"><img src="banners/british.jpg" alt=""></a>
-        <a href="https://www.newartvinyl.ru/" target="_blank"><img src="banners/NEWARTVINYL1.jpg" alt=""></a>
-        <a href="https://www.stereomanclub.ru/" target="_blank"><img src="banners/STEREOMANCLUB1.jpg" alt=""></a>
-        <a href="http://www.eridanaudio.ru/" target="_blank"><img src="banners/eridan.png" alt=""></a>
-        <a href="https://kozlovclub.ru/" target="_blank"><img src="banners/kozlov.jpg" alt=""></a>
-    </div>
-</div>
-<!-- end banners -->
-
-</div>
-</div>
-</div>
-
-<div class="bottom-container" id="footer">
-<div class="bottom-bg"></div>
-<div class="bottom-footer row">
-    <div class="bottom-footer-center col-md-4 col-md-push-4">
-        <div class="bottom-subscribe">
-<div class="subscribe-head">Подписаться на рассылку</div>
-<form id="subscribe-form">
-<input id="subscribe-email" name="subscribe_email" onfocus="if(this.value=='Введите email') this.value='';" onblur="if(!this.value) this.value='Введите email';" type="email" value="Введите email" autocomplete="off">
-<div id="subscribe-submit"><button type="submit">Подписаться</button><div id="subscribe-spinner"></div></div>
-<div class="politika"><input type="checkbox" required=""> <span>Даю согласие на обработку моих персональных данных, с условиями Политики ознакомлен</span></div>
-</form>
+<section class="sec sec--rule">
+  <div class="shell">
+    <div class="posts">
+      <article class="post rise">
+        <p class="post__date"><time datetime="2020-02-23">23 февраля 2020</time></p>
+        <div>
+          <h2>Интервью с Алексеем Козловым</h2>
+          <p>У меня на шоу есть традиция — приглашать на интервью известных музыкантов, продюсеров, звукорежиссёров, дизайнеров и других людей, имеющих отношение к виниловой культуре и музыке на виниловых пластинках. Это интересный формат: обычно интервью берут в студии, а тут человек поднимается на сцену лучшего джаз-клуба мира и в рамках винилового шоу, среди проигрывателей и пластинок, отвечает на мои вопросы, рассказывает о себе, о музыке и, конечно же, о пластинках.</p>
+          <p>Гостями шоу были самые разные люди. <b>Николай Арутюнов</b> («Лига Блюза», Funky Soul), которому я задал вопрос, как ему пелось вместе с Би Би Кингом. <b>Артём Кукаев</b>, артист Российского национального оркестра — одного из 20 лучших оркестров мира — и владелец собственной мастерской музыкальных инструментов. <b>Илья Мазаев</b>, рассказавший о своей работе на студиях легендарных звукорежиссёров Police, Genesis, Pet Shop Boys и Tears For Fears. <b>Анна Королёва</b>, вокалистка, саксофонистка, создательница вокальной школы MultiVoice и бэнд-лидер ярчайших джазовых проектов. <b>Tony Remi</b> — музыкант Annie Lennox, Tower Of Power, The Crusaders и Shakatak. <b>Иннес Сайбин</b>, гитарист Роберта Планта периода Fate Of Nations, и многие другие.</p>
+          <p>А сейчас я взял интервью у <b>Алексея Козлова</b>. Мэтр крайне редко даёт интервью, и это уникальная возможность узнать о том, как записывались пластинки «Арсенала», из первых уст — от его лидера, легендарного российского джазмена, президента лучшего джаз-клуба мира.</p>
+          <p>1 марта, 18:00, Клуб Алексея Козлова, зал The Beat. ЗВУК НА ВИНИЛЕ с Павлом Катковым.</p>
+          <ul class="post__tags"><li>#интервью</li><li>#винил</li><li>#воскресеньевинила</li><li>#КлубАлексеяКозлова</li><li>#шоу</li></ul>
         </div>
-    </div>
-    <div class="bottom-footer-left col-md-4 col-md-pull-4">
-        <div class="bottom-social">
-            <a target="_blank" href="https://vk.com/rockonvinyl"><i class="fa fa-vk"></i></a>
-            <a target="_blank" href="https://www.facebook.com/rockonvinyl"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" href="https://twitter.com/ROCKONVINYL"><i class="fa fa-twitter"></i></a>
-            <a target="_blank" href="https://www.instagram.com/rockonvinyl"><i class="fa fa-instagram"></i></a>
+        <figure class="post__img"><img src="assets/img/photo/mic.jpg" alt="Микрофон перед интервью на шоу" loading="lazy"></figure>
+      </article>
+      <article class="post rise">
+        <p class="post__date"><time datetime="2020-02-20">20 февраля 2020</time></p>
+        <div>
+          <h2>Р — Разнообразие</h2>
+          <p>В первое воскресенье весны я снова выступаю в лучшем джаз-клубе мира. А поговорить с вами хочу — о разнообразии.</p>
+          <p>Когда я запустил свой самый первый виниловый проект, он назывался РОК НА ВИНИЛЕ. Потом мне стало тесно в границах одного жанра, и я запустил БЛЮЗ НА ВИНИЛЕ, ДЖАЗ НА ВИНИЛЕ, ФАНК НА ВИНИЛЕ, РЭП НА ВИНИЛЕ и РЕЙВ НА ВИНИЛЕ. В рамках чего-то одного мне было тесно всегда: помню, я как-то раз сделал серию из шестнадцати (!) шоу, посвящая каждые два одному артисту или группе. Это было здорово, но мне хотелось разнообразия.</p>
+          <p>И я нашёл его в Клубе Алексея Козлова. Казалось бы, джаз-клуб номер один в мире, но на его трёх сценах можно увидеть и услышать джаз, фанк, соул, фьюжн, рок, блюз, world music, фолк, кабаре и цирк, детские хоры, песни русского севера — и моё виниловое шоу.</p>
+          <p>К разнообразию я пришёл и на программах. Теперь за один вечер мои слушатели погружаются в историю самых разных жанров. Сейчас это рок, нью-вейв, фанк и джаз. На прошлом шоу звучали Elvis Presley, George Harrison, The Beatles, Led Zeppelin, Queen, David Bowie, Duran Duran, James Brown, Weather Report, «Арсенал», The Rolling Stones, а также новоорлеанский фанк из коллекции Михаила Мишуриса и индийская народная музыка.</p>
+          <p>А что вы хотели бы услышать на ближайшем шоу?</p>
+          <ul class="post__tags"><li>#разнообразие</li><li>#воскресеньевинила</li><li>#живаяисториязвука</li><li>#КлубАлексеяКозлова</li></ul>
         </div>
-    </div>
-    <div class="bottom-footer-right col-md-4">
-        <div class="bottom-copyright">
-            <p>Copyright &copy; 2017-2020 rockonvinyl.ru</p>
-            <p>ЗВУК НА ВИНИЛЕ с Павлом Катковым</p>
-            <p>+7 985 765 34 22</p>
-            <p>katkov@rockonvinyl.ru</p>
+        <figure class="post__img"><img src="assets/img/photo/gatefold.jpg" alt="Разворот виниловой пластинки" loading="lazy"></figure>
+      </article>
+      <article class="post rise">
+        <p class="post__date"><time datetime="2020-01-29">29 января 2020</time></p>
+        <div>
+          <h2>А иммерсивное ли шоу?</h2>
+          <p>Я тут задумался над модным ныне термином «иммерсивное шоу», и мне объяснили, что это значит «с вовлечением публики». Коли так, то мой «ЗВУК НА ВИНИЛЕ» — это самое настоящее иммерсивное шоу!</p>
+          <p>Посудите сами: в номере «Пластинки с выставки» публика сама выбирает следующую пластинку; в номере «Звуковой эксперимент» зритель поднимается на сцену и в наушниках сравнивает разные фонограммы, а аудитория по выражению лица угадывает запись-победителя; а в рубрике «Обратная связь» прекрасная зрительница вслепую выбирает победителя, который получает в подарок билет на следующее шоу.</p>
+          <p>Очень скоро у вас будет шанс проверить нашу иммерсивность: 2 февраля, ВОСКРЕСЕНЬЕ ВИНИЛА с Павлом Катковым — рок, джаз, фанк, нью-вейв, Клуб Алексея Козлова.</p>
+          <ul class="post__tags"><li>#иммерсивноешоу</li><li>#воскресеньевинила</li><li>#живаяисториязвука</li><li>#ньювейв</li></ul>
         </div>
-    </div>
-</div>
-</div>
-
-<div class="modal fade" id="ModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="ModalSubscribeLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body" style="overflow:hidden; padding:30px 10px 30px 10px;">
-                <div style="float:left;" class="msg"></div> <div style="float:right;"><button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></div>
-            </div>
+        <figure class="post__img"><img src="assets/img/show/guest.jpg" alt="Зрительница выбирает пластинку на шоу" loading="lazy"></figure>
+      </article>
+      <article class="post rise">
+        <p class="post__date"><time datetime="2019-12-20">20 декабря 2019</time></p>
+        <div>
+          <h2>География Роллинг Стоунз и рождённые в декабре</h2>
+          <p>Есть у коллекционеров такое понятие — география, и это интересная тема. Большинство пластинок родом из известной нам части ойкумены: Великобритания и США (родина большинства топовых групп), Германия и Япония (эти страны так наладили производство, что иные их пластинки не уступают оригиналам из стран происхождения группы), Голландия (эти просто много навыпускали для европейского рынка). Такие пластинки держал в руках почти каждый коллекционер.</p>
+          <p>А как насчёт мозамбикского Deep Purple? А корейский Megadeth? А греческий Genesis? Вот это уже интересно, и даже не столько музыкально, сколько географически: экзотика.</p>
+          <p>Вот и у меня недавно появилась новая «географическая» пластинка — альбом Some Girls группы The Rolling Stones, Made In India. Злые языки пророчили мне разочарование, но я поставил её на иглу, и сердце моё запело: играет как нужно!</p>
+          <p>Кстати, в эти дни упомянуть эту пластинку крайне уместно: 18 декабря весь цивилизованный мир праздновал 76-летие Кита Ричардса.</p>
+          <ul class="post__tags"><li>#TheRollingStones</li><li>#географияпластинок</li><li>#Индия</li><li>#живаяисториязвука</li></ul>
         </div>
+        <figure class="post__img"><img src="assets/img/photo/reels.jpg" alt="Пластинки и катушечный магнитофон" loading="lazy"></figure>
+      </article>
+      <article class="post rise">
+        <p class="post__date"><time datetime="2019-11-01">1 ноября 2019</time></p>
+        <div>
+          <h2>Секреты винила</h2>
+          <p>Загадаю загадку: о скольких объектах на этих картинках можно рассказать интересную историю? И сам же отвечу — об очень многих.</p>
+          <p>Виниловый тракт — особая часть нашего шоу. Ведь очень важно, какую технику мы используем для прослушивания и какова её история. На игле Victor 1978 года — оригинальная пластинка ELO 1977 года выпуска.</p>
+          <p>Для шоу мы используем иглы Victor и Ortofon. Первая из них — уникальный винтаж конца 70-х, а вторая — легендарный «крючконосый» шелл запатентованного внешнего вида, мгновенно узнаваемого виниломанами всего мира.</p>
+          <p>Проигрыватель — легендарный винтажный Technics 1210. Первые устройства этой линейки начали выходить ещё в 1972 году, когда Deep Purple впервые исполнили Smoke On The Water. Этот аппарат настолько прост и надёжен, что служит диск-жокеям всего мира до сих пор.</p>
+          <p>Фонокорректор — сердце тракта. Мы используем фонокорректор российской hi-end компании Eridan Audio марки Pulsar, и он обеспечивает классный звук.</p>
+          <ul class="post__tags"><li>#technics</li><li>#ortofon</li><li>#виниловыйтракт</li><li>#звукнавиниле</li><li>#КлубАлексеяКозлова</li></ul>
+        </div>
+        <figure class="post__img"><img src="assets/img/photo/tonearm.jpg" alt="Игла на виниловой пластинке" loading="lazy"></figure>
+      </article>
     </div>
-</div>
-<script>
-$('#subscribe-form').submit(function(e){
-    e.preventDefault();
-    $('#ModalSubscribe').modal();
-    $('#ModalSubscribe .modal-body .msg').html('Спасибо за подписку!');
-    $('#subscribe-email').val('Введите email');
-});
-</script>
+  </div>
+</section>
 
-<a class="go-top">
-    <div class="triangle-up"></div>
-    <div class="rectangle"><span class="fa fa-angle-up"></span></div>
-</a>
+</main>
 
-</div>
-<script>
-setTimeout(function(){
-    $('.loader').hide();
-    $('.load').attr('style', 'visibility: visible !important');
-}, 700);
-</script>
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__in">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:1.2rem">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+        <rect width="120" height="120" fill="#fff"/>
+        <polygon points="0,0 120,0 110,10 10,10" fill="var(--wood)"/>
+        <polygon points="120,0 120,120 110,110 110,10" fill="var(--wood)"/>
+        <polygon points="120,120 0,120 10,110 110,110" fill="var(--wood)"/>
+        <polygon points="0,120 0,0 10,10 10,110" fill="var(--wood)"/>
+        <g fill="none" stroke="var(--ink)" stroke-width="4.5">
+          <circle cx="60" cy="60" r="34"/><circle cx="60" cy="60" r="15"/>
+        </g>
+        <circle cx="60" cy="60" r="4.5" fill="var(--ink)"/>
+      </svg>
+          <span><b>ЗВУК НА ВИНИЛЕ</b><i>с Павлом Катковым</i></span>
+        </a>
+        <p class="small muted" style="max-width:38ch">
+          Авторское виниловое шоу Павла Каткова. Направление «Винил» экосистемы
+          ФУНДАМЕНТ — событийный маркетинг и деловые события.
+        </p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="autor.html">Об авторе</a></li>
+          <li><a href="rockandvinyl.html">Рок &amp; винил</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="newsproject.html">Новости проекта</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Экосистема</h4>
+        <ul>
+          <li><a href="https://futurelegal.ru/" target="_blank" rel="noopener">futurelegal.ru ↗</a></li>
+          <li><a href="https://online.katkov.school/school" target="_blank" rel="noopener">online.katkov.school ↗</a></li>
+          <li><a href="https://biometriclabs.ru/ai/" target="_blank" rel="noopener">biometriclabs.ru/ai ↗</a></li>
+          <li><a href="https://vk.com/rockonvinyl" target="_blank" rel="noopener">vk.com/rockonvinyl ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© 2017—2026 ЗВУК НА ВИНИЛЕ с Павлом Катковым</span>
+      <span>+7 (985) 765-34-22 · katkov@rockonvinyl.ru</span>
+    </div>
+  </div>
+</footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
